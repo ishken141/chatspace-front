@@ -1,9 +1,5 @@
 .chat-side 
-  = render partial: "chat-side_header"
-  = render partial: "chat-side_group"
-
+  = render partial: "shared/chat-side", locals: { group: @group }
 
 .chat-main 
-  = render partial: "chat-main_header"
-  = render partial: "chat-main_message"
-  = render partial: "chat-main_form"
+  = render partial: "shared/chat-main", locals: { group: @group, message: @message } 

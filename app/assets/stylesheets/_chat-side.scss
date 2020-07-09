@@ -1,9 +1,12 @@
-.chat-side{  
-  height: 100vh; 
-  width: 300px;
+.chat-side{   
+  width: 300px; 
+  height: 100px;
   color: white;
   list-style-type: none;
-  float: left;
+  float: left; 
+  .fa { 
+    color: white;
+  }
 } 
 
 .side-header { 
@@ -13,33 +16,36 @@
   align-items: center;
   padding: 0 20px;
   color: white; 
-  list-syle-type: none;
+  list-style-type: none; 
+  position: relative;
   &__box { 
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-weight: bold; 
     font-size: 16px;
-  &__menu { 
+    &__menu { 
     display: flex; 
-    position: relative; 
-    &__new-group { 
-      padding:  auto;      
-    } 
-    &__edit-user { 
-      display: flex;  
-      margin-left: 0.3rem; 
+    position: absolute; 
+    top: 40px; 
+    right: 50px;
+      &__edit-user { 
+      margin-right: 0; 
+      }
     }
   }  
-  } 
-}
+} 
 .chat-side_group { 
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 20px 20px 0;
   overflow: scroll;
-  color: #ffffff;
-  list-style: none;
+  color: white;
+  list-style: none; 
+  a { 
+    text-decoration: none; 
+    color: white;
+  }
 } 　
 
 .group {  
